@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(array = [], index) {
+        let arrNew = [];
+        let mes = [];
+        if (index => 0 && index <= array.length) {
+            for (let i = 0; i < index; i++) {
+                arrNew.push(array[i])
+            }
+            for (let i = index + 1; i < array.length; i++) {
+                arrNew.push(array[i])
+            }
+            mes = arrNew
+        } else {
+            mes = array
+        }
+        return mes
+    }
+</script>
+</body>
+</html>
